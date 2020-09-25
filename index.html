@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>une petite calculatrice en NPI</h1>
+
+    <table class="calculette">
+      <tr>
+        <td class="ecran" colspan="5" value="">
+          <input type="text" id="pile4" class="affichage">
+        </td>
+      </tr>
+      <tr>
+        <td class="ecran" colspan="5" value="">
+          <input type="text" id="pile3" class="affichage">
+        </td>
+      </tr>
+      <tr>
+        <td class="ecran" colspan="5" value="">
+          <input type="text" id="pile2" class="affichage">
+        </td>
+      </tr>
+      <tr>
+        <td class="ecran" colspan="5" value="">
+          <input type="text" id="pile1" class="affichage">
+        </td>
+      </tr>
+      <tr>
+        <td class="ecran" colspan="5" value="">
+          <input type="text" id="saisie">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="bouton" onclick="traiter('chiffre', 7)">7</button>
+          <button class="bouton" onclick="traiter('chiffre', 8)">8</button>
+          <button class="bouton" onclick="traiter('chiffre', 9)">9</button>
+          <button class="bouton" onclick="traiter('special', 'del')">del</button>
+          <button class="bouton" onclick="traiter('special', 'clear')">clear</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="bouton" onclick="traiter('chiffre', 4)">4</button>
+          <button class="bouton" onclick="traiter('chiffre', 5)">5</button>
+          <button class="bouton" onclick="traiter('chiffre', 6)">6</button>
+          <button class="bouton" onclick="traiter('operateur', '*')">x</button>
+          <button class="bouton" onclick="traiter('operateur', '+')">+</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="bouton" onclick="traiter('chiffre', 1)">1</button>
+          <button class="bouton" onclick="traiter('chiffre', 2)">2</button>
+          <button class="bouton" onclick="traiter('chiffre', 3)">3</button>
+          <button class="bouton" onclick="traiter('operateur', '/')">/</button>
+          <button class="bouton" onclick="traiter('operateur', '-')">-</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="bouton" onclick="traiter('chiffre', 0)">0</button>
+          <button class="bouton" onclick="traiter('decimal', '.')">.</button>
+          <button class="bouton" onclick="traiter('operateur', 'enter')" style="width: 127px;">Enter</button>
+        </td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
