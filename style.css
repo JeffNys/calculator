@@ -1,0 +1,21 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background: var(--lightColor);
+}
+
+button {
+    width: 40px;
+}
+
+.ecran {
+    border: 0px;
+    width: 200px;
+    text-align: right;
+}
+
+.affichage {
+    background-color: black;
+    color: rgb(2, 228, 2);
+    text-align: right;
+}
