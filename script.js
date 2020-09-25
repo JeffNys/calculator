@@ -44,6 +44,16 @@ function traiter (action , touche) {
             // attention, si la saisie n'est pas vide, on l'insere dans la pile
             if (pile[0]!= '') pile.unshift('');
 
+            // on s'assure qu'il y est bien quelque chose à faire
+            // et que ceux qui ne savent pas utiliser une NPI ne fassent pas de dégats
+            if (touche == '+' || touche == '-' || touche == '*' || touche == '/'){
+                if (pile[2] == ''){
+                    console.log("erreur de manipulation");
+                    break;
+                }
+            }
+
+
             // a partir de là, la saisie est vide, on travaille que sur la pile
             // c'est plus simple comme ça, seulement un cas de figure possible
             switch (touche){
@@ -97,6 +107,7 @@ function traiter (action , touche) {
                     for (let i = 0; i< pile.length; i++){
                         pile[i]='';
                     }
+                    break;
             }
         break;
     }
